@@ -87,5 +87,8 @@ class TestInventoryAllocator(unittest.TestCase):
 					"wh2": [{"apple":2}, {"orange" : 5}],
 					"wh3": [{"pear": 3}]})
 
+		order_test_8 = InventoryAllocator({}, [test_wh_1])
+		self.assertEqual(order_test_8.fufill_order(), {})
+
 if __name__ == "__main__":
 	unittest.main()
